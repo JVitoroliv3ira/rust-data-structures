@@ -35,32 +35,19 @@ Toda decisão aqui prioriza **clareza, aprendizado e entendimento**, não perfor
 
 ---
 
-## Organização
+## Estruturas implementadas
 
-Cada estrutura vive em sua própria pasta/crate:
-
-```
-crates/
-  stack/
-    README.md
-  queue/
-    README.md
-  singly_linked_list/
-    README.md
-  bst/
-    README.md
-```
+- **Stack (LIFO)**  
+  [`crates/stack/README.md`](crates/stack/README.md)
 
 ---
 
-## Ordem de implementação (inicial)
+## Ordem de implementação (planejada)
 
-- [ ] stack (LIFO)
+- [x] stack (LIFO)
 - [ ] queue (FIFO)
 - [ ] singly linked list
 - [ ] binary search tree (BST)
-
-A ordem é pensada para que cada estrutura prepare conceitos necessários para a próxima.
 
 ---
 

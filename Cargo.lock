@@ -3,5 +3,9 @@
 version = 4
 
 [[package]]
+name = "singly-linked-list"
+version = "0.1.0"
+
+[[package]]
 name = "stack"
 version = "0.1.0"

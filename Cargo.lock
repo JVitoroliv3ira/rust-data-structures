@@ -3,6 +3,10 @@
 version = 4
 
 [[package]]
+name = "queue"
+version = "0.1.0"
+
+[[package]]
 name = "singly-linked-list"
 version = "0.1.0"
 

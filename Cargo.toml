@@ -3,4 +3,5 @@ resolver = "2"
 members = [
   "crates/stack",
   "crates/singly-linked-list",
+  "crates/queue"
 ]

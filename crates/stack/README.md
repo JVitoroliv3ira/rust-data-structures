@@ -1,45 +1,73 @@
-# stack (LIFO)
+# Stack (LIFO)
 
-Implementação de uma pilha (Last-In, First-Out).
+Implementação de uma **pilha (stack)** em Rust com objetivo **100% educacional**.
 
-Esta é a primeira estrutura do repositório e serve como base
-para o estilo de código, testes e documentação.
+Segue o modelo **LIFO (Last-In, First-Out)**: o último elemento a entrar é o
+primeiro a sair.
 
 ---
 
 ## Objetivo
 
-- Entender design de API em Rust
+- Entender o comportamento LIFO
+- Praticar design de API em Rust
 - Trabalhar com ownership simples
-- Escrever testes claros
-- Estabelecer o padrão do projeto
-
-Nesta primeira versão, vamos usar `Vec<T>` internamente.
+- Validar invariantes com testes
 
 ---
 
-## API conceitual
+## Modelo mental
 
-- `new`
-- `push`
-- `pop`
-- `peek`
-- `len`
-- `is_empty`
+```
+
+top -> [A] [B] [C]
+
+```
+
+- inserção e remoção acontecem no **topo**
+
+---
+
+## API pública
+
+- `new()`
+- `push(value: T)`
+- `pop() -> Option<T>`
+- `peek() -> Option<&T>`
+- `len() -> usize`
+- `is_empty() -> bool`
 
 ---
 
 ## Invariantes
 
-- Ordem LIFO
-- `len` reflete exatamente a quantidade de elementos
-- `peek` não remove o topo
-- `pop` remove exatamente um elemento
+- Ordem **LIFO** sempre preservada
+- `len()` reflete exatamente a quantidade de elementos
+- `peek` não remove o elemento do topo
+- `pop` remove exatamente um elemento quando possível
 
 ---
 
-## Testes esperados
+## Complexidade
 
-- stack vazia: `pop` e `peek` retornam `None`
-- sequência LIFO correta
-- `len` e `is_empty` consistentes
+| Operação | Complexidade |
+| -------- | ------------ |
+| push     | O(1)         |
+| pop      | O(1)         |
+| peek     | O(1)         |
+| len      | O(1)         |
+| is_empty | O(1)         |
+
+---
+
+## Implementação
+
+Esta versão utiliza `Vec<T>` internamente.
+
+A estrutura interna é um detalhe; a API é o contrato.
+
+---
+
+## Observação final
+
+Esta implementação prioriza **clareza e aprendizado**, não performance.

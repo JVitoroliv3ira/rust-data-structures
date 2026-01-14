@@ -52,6 +52,19 @@ Toda decisão aqui prioriza **clareza, aprendizado e entendimento**, não perfor
 
 ---
 
+## Makefile
+
+O projeto possui um `Makefile` na raiz para facilitar tarefas comuns durante o desenvolvimento.
+
+- `make test` — executa todos os testes do workspace
+- `make check` — valida a compilação sem gerar binários
+- `make fmt` — formata o código
+- `make clippy` — executa lints
+
+O uso do Makefile é apenas um atalho; os comandos `cargo` continuam sendo a fonte de verdade.
+
+---
+
 ## Regras do jogo
 
 - Começar sempre com uma API mínima

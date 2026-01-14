@@ -14,6 +14,12 @@ pub struct SinglyLinkedList {
     counter: usize,
 }
 
+impl Default for SinglyLinkedList {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl SinglyLinkedList {
     pub fn new() -> Self {
         Self {

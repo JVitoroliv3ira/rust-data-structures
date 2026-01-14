@@ -37,16 +37,17 @@ Toda decisão aqui prioriza **clareza, aprendizado e entendimento**, não perfor
 
 ## Estruturas implementadas
 
-- **Stack (LIFO)**  
-  [`crates/stack/README.md`](crates/stack/README.md)
+- **Stack (LIFO)**
+  - [`crates/stack/README.md`](crates/stack/README.md)
+  - [`crates/singly-linked-list/README.md`](crates/singly-linked-list/README.md)
 
 ---
 
 ## Ordem de implementação (planejada)
 
 - [x] stack (LIFO)
+- [x] singly linked list
 - [ ] queue (FIFO)
-- [ ] singly linked list
 - [ ] binary search tree (BST)
 
 ---

@@ -1,27 +1,27 @@
-pub struct Stack {
-    items: Vec<i32>,
+pub struct Stack<T> {
+    items: Vec<T>,
 }
 
-impl Default for Stack {
+impl<T> Default for Stack<T> {
     fn default() -> Self {
         Self::new()
     }
 }
 
-impl Stack {
+impl<T> Stack<T> {
     pub fn new() -> Self {
         Self { items: vec![] }
     }
 
-    pub fn push(&mut self, item: i32) {
+    pub fn push(&mut self, item: T) {
         self.items.push(item);
     }
 
-    pub fn pop(&mut self) -> Option<i32> {
+    pub fn pop(&mut self) -> Option<T> {
         self.items.pop()
     }
 
-    pub fn peek(&self) -> Option<&i32> {
+    pub fn peek(&self) -> Option<&T> {
         self.items.last()
     }
 
@@ -40,19 +40,19 @@ mod tests {
 
     #[test]
     fn empty_stack_pop_are_none() {
-        let mut s = Stack::new();
+        let mut s = Stack::<i32>::new();
         assert_eq!(s.pop(), None);
     }
 
     #[test]
     fn empty_stack_peak_are_none() {
-        let s = Stack::new();
+        let s = Stack::<i32>::new();
         assert_eq!(s.peek(), None);
     }
 
     #[test]
     fn len_tracks_number_of_elements() {
-        let mut s = Stack::new();
+        let mut s = Stack::<i32>::new();
         s.push(34);
         s.push(9);
         s.push(314);
@@ -63,20 +63,20 @@ mod tests {
 
     #[test]
     fn is_empty_is_true_for_new_stack() {
-        let s = Stack::new();
+        let s = Stack::<i32>::new();
         assert!(s.is_empty());
     }
 
     #[test]
     fn is_empty_is_false_after_push() {
-        let mut s = Stack::new();
+        let mut s = Stack::<i32>::new();
         s.push(5);
         assert!(!s.is_empty());
     }
 
     #[test]
     fn peek_does_not_remove_element() {
-        let mut s = Stack::new();
+        let mut s = Stack::<i32>::new();
         s.push(10);
         assert_eq!(s.peek(), Some(&10));
         assert_eq!(s.peek(), Some(&10));
@@ -86,7 +86,7 @@ mod tests {
 
     #[test]
     fn peek_returns_top_element() {
-        let mut s = Stack::new();
+        let mut s = Stack::<i32>::new();
         s.push(1);
         s.push(2);
         s.push(3);
@@ -96,7 +96,7 @@ mod tests {
 
     #[test]
     fn lifo_order() {
-        let mut s = Stack::new();
+        let mut s = Stack::<i32>::new();
         s.push(4);
         s.push(100);
         s.push(25);

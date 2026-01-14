@@ -39,6 +39,7 @@ Toda decisão aqui prioriza **clareza, aprendizado e entendimento**, não perfor
 
 - **Stack (LIFO):** [`crates/stack/README.md`](crates/stack/README.md)
 - **Singly Linked List:** [`crates/singly-linked-list/README.md`](crates/singly-linked-list/README.md)
+- **Queue:** [`crates/queue/README.md`](crates/queue/README.md)
 
 ---
 
@@ -46,7 +47,7 @@ Toda decisão aqui prioriza **clareza, aprendizado e entendimento**, não perfor
 
 - [x] stack (LIFO)
 - [x] singly linked list
-- [ ] queue (FIFO)
+- [x] queue (FIFO)
 - [ ] binary search tree (BST)
 
 ---

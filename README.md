@@ -37,9 +37,8 @@ Toda decisão aqui prioriza **clareza, aprendizado e entendimento**, não perfor
 
 ## Estruturas implementadas
 
-- **Stack (LIFO)**
-  - [`crates/stack/README.md`](crates/stack/README.md)
-  - [`crates/singly-linked-list/README.md`](crates/singly-linked-list/README.md)
+- **Stack (LIFO):** [`crates/stack/README.md`](crates/stack/README.md)
+- **Singly Linked List:** [`crates/singly-linked-list/README.md`](crates/singly-linked-list/README.md)
 
 ---
 

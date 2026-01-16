@@ -136,7 +136,6 @@ mod tests {
         assert!(s.is_empty());
         assert_eq!(s.peek(), None);
 
-        // pop extra continua sendo None
         assert_eq!(s.pop(), None);
         assert_eq!(s.len(), 0);
     }
@@ -202,5 +201,19 @@ mod tests {
         assert_eq!(s.peek(), None);
         assert_eq!(s.len(), 0);
         assert!(s.is_empty());
+    }
+
+    #[test]
+    fn pop_on_single_element_stack_returns_element_and_empties_stack() {
+        let mut s = Stack::<i32>::new();
+        s.push(7);
+        assert_eq!(s.len(), 1);
+        assert!(!s.is_empty());
+        assert_eq!(s.peek(), Some(&7));
+        assert_eq!(s.pop(), Some(7));
+        assert_eq!(s.len(), 0);
+        assert!(s.is_empty());
+        assert_eq!(s.peek(), None);
+        assert_eq!(s.pop(), None);
     }
 }

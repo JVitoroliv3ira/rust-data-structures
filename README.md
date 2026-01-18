@@ -40,15 +40,17 @@ Toda decisão aqui prioriza **clareza, aprendizado e entendimento**, não perfor
 - **Stack (LIFO):** [`crates/stack/README.md`](crates/stack/README.md)
 - **Singly Linked List:** [`crates/singly-linked-list/README.md`](crates/singly-linked-list/README.md)
 - **Queue:** [`crates/queue/README.md`](crates/queue/README.md)
+- **HashMap:** [`crates/hash-map/README.md`](crates/hash-map/README.md)
 
 ---
 
 ## Ordem de implementação (planejada)
 
-- [x] stack (LIFO)
-- [x] singly linked list
-- [x] queue (FIFO)
-- [ ] binary search tree (BST)
+- [x] Stack (LIFO)
+- [x] Singly linked list
+- [x] Queue (FIFO)
+- [x] Hash map
+- [ ] Binary search tree (BST)
 
 ---
 
